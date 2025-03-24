@@ -1,0 +1,157 @@
+$title-color: hsl(234, 12%, 34%);
+$text-color: hsl(212, 6%, 44%);
+$title1-size: 2em;
+$title2-size: 24px;
+$paragraph-size: 1em;
+
+$supervivor: hsl(180, 62%, 55%);
+$team: hsl(0, 78%, 62%);
+$calculator: hsl(212, 86%, 64%);
+$karma: hsl(34, 97%, 64%);
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+// Global style
+
+%tilte-style {
+    font-size: $title1-size;
+    color: $title-color;
+    font-weight: 600;
+}
+
+%container-style {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+%card-style {
+    position: relative;
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border-top: 4px solid transparent;
+}
+
+.container {
+    @extend %container-style;
+}
+
+p {
+    font-size: $paragraph-size;
+    color: $text-color;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1 {
+    @extend %tilte-style;
+    font-weight: 200;
+}
+
+h2 {
+    @extend %tilte-style;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: $title-color;
+}
+
+// header style
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem 0;
+} 
+
+
+header {
+    .container {
+        @extend %container-style;
+        max-width: 680px;
+    }
+}
+
+
+// section style
+
+main {
+    .container {
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+
+            .card {
+                @extend %card-style;
+            }
+
+            .card {
+                p {
+                    margin: 10px 0 28px 0;
+                }
+                
+                .card-image {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                }
+            }
+
+            .karma {
+                border-top-color: $karma;
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+
+            .supervisor {
+                border-top-color: $supervivor;
+                grid-column: 1 / 2;
+                grid-row: 1 / 3;
+            }
+
+            .team {
+                border-top-color: $team;
+                grid-column: 2 / 3; 
+                grid-row: 1 / 2;
+            }
+
+            .calculator {
+                border-top-color: $calculator;
+                grid-column: 3 / 4;
+                grid-row: 1 / 3;
+              
+            }
+
+
+            
+
+        }
+    }
+}
+
+
+footer {
+    margin: 2rem 0 12px 0;
+}
+
+
