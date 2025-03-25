@@ -46,8 +46,8 @@ Users should be able to:
 
 ### Live Demo  
 
-- **Solution URL:** [Add solution URL here](https://your-solution-url.com)  
-- **Live Site URL:** [Add live site URL here](https://card-sections-ui.vercel.app/)  
+- **Solution URL:** [Card-sections-ui Frontend Mentor](https://www.frontendmentor.io/solutions/feature-cards-built-with-html-and-sass-yXl8BQWic0)  
+- **Live Site URL:** [Vercel](https://card-sections-ui.vercel.app/)  
 
 ---
 
